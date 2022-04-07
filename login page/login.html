@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="login.css">
+  
+  <title>Log in page</title>
+
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: #3e52a3; }
+  </style>
+</head>
+<body>
+  <div class="navbar">
+    <h1>Quizzo</h1>
+  </div>
+  <section id="intro">
+    <div class="container">
+      <div class="left-col">
+       <i> <h1>Already have an account?</h1></i>
+        <img src="../images/owl1.png" height="70%" width="70%">
+      </div>
+      <div class="right-col">
+        <div class="form-container">
+          <form action="#">
+            <div class="top">
+              <p>Log in</p>
+            </div>
+            <div class="field-group">
+              <label for="Email">Email Address</label>
+              <input name='Email' id="Email" value="" type="email" placeholder="Email Address">
+              <img src="../images/icon-error.svg" class="error-icon" alt="">
+              <p class="error-text">Looks like this is not email</p>              
+            </div>
+            <div class="field-group">
+              <label for="password">Password Address</label>
+              <input name='password' id="password" value="" type="password" placeholder="Password">
+              <img src="../images/icon-error.svg" class="error-icon" alt="">
+              <p class="error-text">Password cannot be empty</p>              
+            </div>
+            <button type="submit">Dive in! </button>
+          </form>
+        </div>
+        
+      </div>
+    </div>
+  </section>
+
+  
+  <!-- <footer>
+    <p class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+      Coded by <a href="https://webcifar.com">Web Cifar</a>.
+    </p>
+  </footer> -->
+  <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-auth.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-firestore.js"></script>
+  <script src="./login.js"></script>
+</body>
+</html>
